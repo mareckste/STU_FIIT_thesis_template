@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/W32TeX) (preloaded format=pdflatex 2017.9.20)  17 NOV 2017 11:59
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/W32TeX) (preloaded format=pdflatex 2017.9.20)  17 NOV 2017 12:15
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -2001,22 +2001,26 @@ Package caption Info: End \AtBeginDocument code.
 
 (c:/texlive/2017/texmf-dist/tex/latex/listings/lstlang1.sty
 File: lstlang1.sty 2015/06/04 1.6 listings language file
-) (./titlepage.tex
+) (./intropage.tex
 (c:/texlive/2017/texmf-dist/tex/latex/ucs/data/uni-0.def
 File: uni-0.def 2013/05/13 UCS: Unicode data U+0000..U+00FF
 )
 (c:/texlive/2017/texmf-dist/tex/latex/ucs/data/uni-1.def
 File: uni-1.def 2013/05/13 UCS: Unicode data U+0100..U+01FF
-))
-Underfull \hbox (badness 10000) in paragraph at lines 22--134
+)) (./titlepage.tex
+Underfull \hbox (badness 10000) in paragraph at lines 22--1
 
  []
 
 [1
 
-{c:/texlive/2017/texmf-var/fonts/map/pdftex/updmap/pdftex.map}]pdfTeX warning (
-ext4): destination with the same identifier (name{page.}) has been already used
-, duplicate ignored
+{c:/texlive/2017/texmf-var/fonts/map/pdftex/updmap/pdftex.map}])
+Underfull \hbox (badness 10000) in paragraph at lines 22--134
+
+ []
+
+[1]pdfTeX warning (ext4): destination with the same identifier (name{page.}) ha
+s been already used, duplicate ignored
 <to be read again> 
                    \relax 
 l.134 \newpage\null\thispagestyle{empty}\newpage
@@ -2038,13 +2042,8 @@ Underfull \hbox (badness 10000) in paragraph at lines 9--13
  []
 
 )
-Overfull \hbox (2.4493pt too wide) in paragraph at lines 15--149
- \IL2/ptm/m/n/12 Ma-rek ©te-vu-liak
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 15--149
-
+Overfull \hbox (4.6333pt too wide) in paragraph at lines 15--149
+ \IL2/ptm/m/n/12 Meno Priez-visko 
  []
 
 (./anotation.texpdfTeX warning (ext4): destination with the same identifier (na
@@ -2056,31 +2055,26 @@ l.1 \newpage
 me{page.}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.1 \newpage
-             [6]pdfTeX warning (ext4): destination with the same identifier (na
-me{page.}) has been already used, duplicate ignored
-<to be read again> 
-                   \relax 
 l.42 \newpage
-             \null\thispagestyle{empty}\newpage [7]pdfTeX warning (ext4): desti
+             \null\thispagestyle{empty}\newpage [6]pdfTeX warning (ext4): desti
 nation with the same identifier (name{page.}) has been already used, duplicate 
 ignored
 <to be read again> 
                    \relax 
 l.42 \newpage\null\thispagestyle{empty}\newpage
-                                                [8])pdfTeX warning (ext4): dest
+                                                [7])pdfTeX warning (ext4): dest
 ination with the same identifier (name{page.}) has been already used, duplicate
  ignored
 <to be read again> 
                    \relax 
 l.151 \newpage
-              \null\thispagestyle{empty}\newpage [9]pdfTeX warning (ext4): dest
+              \null\thispagestyle{empty}\newpage [8]pdfTeX warning (ext4): dest
 ination with the same identifier (name{page.}) has been already used, duplicate
  ignored
 <to be read again> 
                    \relax 
 l.151 \newpage\null\thispagestyle{empty}\newpage
-                                                 [10] (./bakalarka.toc
+                                                 [9] (./bakalarka.toc
 LaTeX Font Info:    Try loading font information for OT1+lmr on input line 2.
 
 (c:/texlive/2017/texmf-dist/tex/latex/lm/ot1lmr.fd
@@ -2139,11 +2133,15 @@ File: mt-msb.cfg 2005/06/01 v1.0 microtype config. file: AMS symbols (b) (RS)
 (./introduction.tex)
 Underfull \vbox (badness 3417) has occurred while \output is active []
 
- [1
+pdfTeX warning (ext4): destination with the same identifier (name{page.1}) has 
+been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.190 
+       [1
 
 
-]
-(./analysis.tex [2] [3
+] (./analysis.tex [2] [3
 
 ] [4]
 LaTeX Font Info:    Try loading font information for TS1+ptm on input line 14.
@@ -2270,20 +2268,13 @@ Package atveryend Info: Empty hook `AfterLastShipout' on input line 240.
  (./bakalarka.aux)
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 240.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 240.
-
-
-Package rerunfilecheck Warning: File `bakalarka.out' has changed.
-(rerunfilecheck)                Rerun to get outlines right
-(rerunfilecheck)                or use package `bookmark'.
-
-Package rerunfilecheck Info: Checksums for `bakalarka.out':
-(rerunfilecheck)             Before: A3C0AB6FE425749C02ED0E26CFA8F1C0;1196
-(rerunfilecheck)             After:  0CD4EE6890078F925C6C6E51BDC1074F;1234.
+Package rerunfilecheck Info: File `bakalarka.out' has not changed.
+(rerunfilecheck)             Checksum: 0CD4EE6890078F925C6C6E51BDC1074F;1234.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 240.
  ) 
 Here is how much of TeX's memory you used:
- 25962 strings out of 492990
- 429689 string characters out of 6136334
+ 25965 strings out of 492990
+ 429726 string characters out of 6136334
  677017 words of memory out of 5000000
  28974 multiletter control sequences out of 15000+600000
  589534 words of font info for 92 fonts, out of 8000000 for 9000
@@ -2302,7 +2293,7 @@ sy10.pfb><c:/texlive/2017/texmf-dist/fonts/type1/urw/courier/ucrr8a.pfb><c:/tex
 live/2017/texmf-dist/fonts/type1/urw/times/utmb8a.pfb><c:/texlive/2017/texmf-di
 st/fonts/type1/urw/times/utmr8a.pfb><c:/texlive/2017/texmf-dist/fonts/type1/urw
 /times/utmri8a.pfb>
-Output written on bakalarka.pdf (37 pages, 357025 bytes).
+Output written on bakalarka.pdf (37 pages, 357548 bytes).
 PDF statistics:
  410 PDF objects out of 1000 (max. 8388607)
  355 compressed objects within 4 object streams
