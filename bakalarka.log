@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/W32TeX) (preloaded format=pdflatex 2017.9.20)  17 NOV 2017 12:15
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/W32TeX) (preloaded format=pdflatex 2017.9.20)  17 NOV 2017 12:20
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -2293,7 +2293,7 @@ sy10.pfb><c:/texlive/2017/texmf-dist/fonts/type1/urw/courier/ucrr8a.pfb><c:/tex
 live/2017/texmf-dist/fonts/type1/urw/times/utmb8a.pfb><c:/texlive/2017/texmf-di
 st/fonts/type1/urw/times/utmr8a.pfb><c:/texlive/2017/texmf-dist/fonts/type1/urw
 /times/utmri8a.pfb>
-Output written on bakalarka.pdf (37 pages, 357548 bytes).
+Output written on bakalarka.pdf (37 pages, 357526 bytes).
 PDF statistics:
  410 PDF objects out of 1000 (max. 8388607)
  355 compressed objects within 4 object streams
