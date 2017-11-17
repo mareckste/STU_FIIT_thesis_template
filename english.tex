@@ -1,0 +1,91 @@
+%%
+%% Formats and Defs
+%%
+\input{FormatsAndDefsEN.tex}
+
+\begin{document}
+
+%%
+%% Title Page
+%%
+\input{titlepageBc.tex}
+
+%%
+%% Anotation
+%%
+\pagenumbering{roman}\setcounter{page}{2}
+\input{anotacia.tex}
+
+%%
+%% Declaration
+%%
+\input{declaration.tex}
+
+%%
+%% Contents
+%%
+%\pagestyle{empty}
+\newpage
+\tableofcontents{}
+
+%%
+%% Figures
+%%
+ \newpage
+ \listoftables
+ \newpage
+ \listoffigures
+ \newpage
+ \lstlistoflistings
+
+
+%%
+%% Clear Page And Set New Page Counter
+%%
+
+\clearpage
+\pagenumbering{arabic}
+\setcounter{page}{1}
+
+\sectionfont{\sectionrule{0pt}{0pt}{-2ex}{0.5pt}}
+
+%%
+%% Introduction
+%%
+\input{intro.tex}
+
+%%
+%% analysis
+%%
+\input{analysis.tex}
+
+%%
+%% design
+%%
+\input{design.tex}
+
+%%
+%% test
+%%
+\input{test.tex}
+
+%%
+%% Conclusion
+%%
+\input{conclusion.tex}
+
+%%
+%% References
+%%
+\newpage
+\addcontentsline{toc}{section}{\refname}
+\bibliographystyle{plain}
+\bibliography{references.bib}
+
+%%
+%% Appendix
+%%
+\appendix
+\input{appendix.tex}
+
+\end{document}

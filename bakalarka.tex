@@ -1,0 +1,249 @@
+\documentclass[a4paper,english,12pt,appendix,twoside]{article}
+
+%%
+%% Formats and Defs
+%%
+\input{FormatsAndDefs.tex}
+\usepackage[slovak]{babel}                                                      % title in Slovak
+\usepackage[IL2]{fontenc}                                                       % support for word wrapping of special Slovak characters at the end of line on the end
+  
+
+\let\oldsection\section
+\def\section{\cleardoublepage\oldsection}
+\usepackage{emptypage}
+%\usepackage[a4paper,left=1in,right=1in,top=1in,bottom=1in,footskip=.25in]{geometry}
+\usepackage[a4paper, bindingoffset=12mm]{geometry}
+\usepackage{algorithm}
+\usepackage{algpseudocode}
+
+\usepackage{listings}
+\usepackage{color} %red, green, blue, yellow, cyan, magenta, black, white
+\definecolor{mygreen}{RGB}{28,172,0} % color values Red, Green, Blue
+\definecolor{mylilas}{RGB}{170,55,241}
+\lstset{language=Java,
+	basicstyle=\ttfamily,
+	showspaces=false,
+	numbers=left,
+}
+
+
+\makeatletter
+\def\BState{\State\hskip-\ALG@thistlm}
+\makeatother
+
+\floatname{algorithm}{Algoritmus}
+\renewcommand{\algorithmicrequire}{\textbf{Vstupy: }}
+\renewcommand{\algorithmicensure}{\textbf{Výstupy: }}
+\renewcommand{\listalgorithmname}{Zoznam algoritmov}
+
+\makeatletter
+\renewcommand\subparagraph{\@startsection{subparagraph}{5}{\z@}%
+	{-3.25ex\@plus -1ex \@minus -.2ex}%
+	{0.0001pt \@plus .2ex}%
+	{\normalfont\normalsize\bfseries}}
+\makeatother
+
+\usepackage[nottoc,notlof,notlot]{tocbibind}
+\usepackage{tocloft}
+
+\renewcommand\cftaftertoctitle{\par\noindent\hrulefill\par}
+\renewcommand{\cftsecleader}{\cftdotfill{\cftdotsep}}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%-------definitions-----
+\newcommand{\Author}{Meno Priezvisko} 
+\newcommand{\Title}{Title English}
+\newcommand{\Titlesk}{Title Slovak}
+\newcommand{\Supervisor}{Supervisor}
+\newcommand{\Place}{Institute of computer engineering and applied informatics, FIIT STU, Bratislava}
+\newcommand{\Placesk}{Ústav počítačového inžinierstva a aplikovanej informatiky, FIIT STU, Bratislava}
+\newcommand{\Year}{2017}
+\newcommand{\Month}{May }
+\newcommand{\Monthsk}{Máj }
+\newcommand{\FIIT}{FIIT-XXXX-XXXXX}
+\newcommand{\Field}{9.2.1 Informatics}
+\newcommand{\Fieldsk}{9.2.1 Informatika}
+\newcommand{\Program}{Informatics}
+\newcommand{\Programsk}{Informatika}
+
+
+
+%%
+%% DON'T TOUCH
+%%
+%% PDF meta-data 
+\hypersetup{%
+pdftitle={\Title},%
+pdfauthor={\Author},%
+pdfkeywords={key words},%
+}%
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%\usepackage{fancyhdr}
+
+%\pagestyle{fancy}
+%\pagestyle{fancy}
+%\fancyhf{}
+%\renewcommand{\subsectionmark}[1]{\markright{#1}}
+
+%\fancyhead[R]{\rightmark}
+
+%\renewcommand{\headrulewidth}{1pt}
+\setcounter{tocdepth}{4}
+\setcounter{secnumdepth}{4}
+\makeatletter
+
+
+
+\@addtoreset{paragraph}{subsubsection}
+\makeatother
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{indentfirst}
+\usepackage{physics}
+%\usepackage{geometry}
+\usepackage{lmodern}
+\usepackage{lipsum}
+\begin{document}
+\lstset{language=Matlab,%
+	%basicstyle=\color{red},
+	breaklines=true,%
+	morekeywords={matlab2tikz},
+	keywordstyle=\color{blue},%
+	morekeywords=[2]{1}, keywordstyle=[2]{\color{black}},
+	identifierstyle=\color{black},%
+	stringstyle=\color{mylilas},
+	commentstyle=\color{mygreen},%
+	showstringspaces=false,%without this there will be a symbol in the places where there is a space
+	numbers=none,%
+	numberstyle={\tiny \color{black}},% size of the numbers
+	numbersep=9pt, % this defines how far the numbers are from the text
+	emph=[1]{for,end,break},emphstyle=[1]\color{red}, %some words to emphasise
+	%emph=[2]{word1,word2}, emphstyle=[2]{style},    
+}
+
+\urlstyle{same}
+%\input{intropage.tex}
+%%
+%% Title Page
+%%
+\input{titlepage.tex}
+\pagenumbering{gobble}
+\newpage\null\thispagestyle{empty}\newpage
+%%
+%% Declaration
+%%
+\input{declaration.tex}
+\newpage\null\thispagestyle{empty}\newpage
+
+%%
+%% Thanks
+%%
+\input{thanks.tex}
+%\newpage\null\thispagestyle{empty}\newpage
+%%
+%% Anotation
+%%
+
+\input{anotation.tex}
+\newpage\null\thispagestyle{empty}\newpage
+
+%%
+%% Contents
+%%
+
+\pagenumbering{roman}
+\setcounter{page}{13}
+%\pagestyle{empty}
+\tableofcontents{}
+%%
+%% Lists
+%%
+ \newpage\null\thispagestyle{empty}\newpage
+% List of Figures
+% \listoffigures  
+% \newpage
+% List of Tables
+% \listoftables
+%\newpage
+
+%\listofalgorithms
+%\addtocontents{loa}{\def\string\figurename{Algoritmus}}
+%\newpage\null\thispagestyle{empty}\newpage
+
+%%
+%% Clear Page And Set New Page Counter
+%%
+\clearpage
+\pagenumbering{arabic}
+\setcounter{page}{1}
+
+\sectionfont{\sectionrule{0pt}{0pt}{-2ex}{0.5pt}}
+
+
+%%
+%% Introduction
+%%
+\input{introduction.tex}
+
+%%
+%% analysis
+%%
+\input{analysis.tex}
+
+%%
+%% design
+%%
+\input{design.tex}
+
+%%
+%% implementation
+%%
+\input{implementation.tex}
+
+%%
+%% test
+%%
+\input{results.tex}
+
+
+%%
+%% Conclusion
+%%
+\input{conclusions.tex}
+
+%%
+%% References
+%%
+\newpage
+%\cleardoublepage 
+\bibliographystyle{acm}
+%\addcontentsline{toc}{section}{\refname}
+\renewcommand\bibname{Použitá literatúra}
+\bibliography{references.bib}
+\newpage
+
+
+%%
+%% Appendix
+%%
+\newcommand{\appendixpagenumbering}{
+	\break
+	\pagenumbering{arabic}
+	\renewcommand{\thepage}{\thesection-\arabic{page}}
+}
+\appendix
+\input{appendix.tex}
+
+\end{document}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%%
+%% !!!! set your own details
+%%
+\begin{comment}
+[x] [Autor Dokumentu], [Nazov Stranky], [URL], [Datum Navstevy]
+\end{comment}

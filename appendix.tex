@@ -1,0 +1,149 @@
+\newpage
+\thispagestyle{plain}
+\appendixpagenumbering
+\section{Technická dokumentácia}
+\lipsum[1] 
+blabla \\ \\
+{\bf{Item 1}}
+
+Knižnica je uvedená ako voľne dostupná pre stiahnutie na konkrétnej webovej adrese \url{http://opencv.org/releases.html}. Na stránke nájdeme jednotlivé verzie knižnice pre platformy Windows, Linux/OSX, Android a iOS. \\ \\
+\noindent
+{\bf{Item 2}}
+
+Knižnica je uvedená ako voľne dostupná pre stiahnutie na oficiálnej webovej adrese spoločnosti Microsoft \url{https://www.microsoft.com/en-us/download/details.aspx?id=44561}. Daná knižnica je primárne určená pre platformu Windows.
+
+
+\newpage
+\appendixpagenumbering
+\section{Používateľská príručka}
+Aplikáciu superpixel segmentácie s \textit{.exe} príponou spustíme jednoducho pomocou príkazového riadku v prostredí Windows. Pri spustení s parametrom \textit{-h}, sa zobrazí informácia pre správne použitie aplikácie.
+\lstdefinestyle{DOS}
+{
+	backgroundcolor=\color{white},
+	basicstyle=\scriptsize\color{black}\ttfamily
+}
+
+\begin{lstlisting}[style=DOS]
+.\BP_xstevuliakm_vizualna_segmentacia_objektov.exe -h
+
+BP_xstevuliakm_vizualna_segmentacia_objektov.exe <parameter>
+
+moznosti <parameter>:
+-i:          zobrazenie informacii o programe
+-h:          zobrazenie pomocnej prirucky
+ziadny:      superpixel segmentacia
+\end{lstlisting}
+Ak zvolíme parameter \textit{-i}, zobrazia sa nám dodatočné informácie o aplikácii obsahujúce názov, meno autora a druh projektu.
+\begin{lstlisting}[style=DOS]
+.\BP_xstevuliakm_vizualna_segmentacia_objektov.exe -i
+
+Nazov programu: 3D DBSCAN superpixel segmentacia
+Autor:          Marek Stevuliak
+Druh projektu:  Bakalarky projekt, FIIT STU 2017
+\end{lstlisting}
+V prípade spustenia aplikácie bez parametra máme na výber z volieb, ktoré sú zobrazené formou jednoduchého menu. Vybranú voľbu zadáme ako jej poradové číslo a potvrdíme ju klávesou ENTER. Konkrétne si môžeme vybrať spomedzi:
+\begin{my_enumerate}
+	\item Výstup segmentácie využitím hĺbkovej informácie uložený do .png súboru 16-bitových hodnôt v aktuálnom adresári. 
+	\item Výstup segmentácie využitím hĺbkovej informácie zobrazený priamo na obrazovku.
+	\item Výstup segmentácie bez použitia hĺbkovej informácie uložený do .png súboru 16-bitových hodnôt v aktuálnom adresári. 
+	\item Výstup segmentácie bez použitia hĺbkovej informácie zobrazený priamo na obrazovku.
+\end{my_enumerate}
+\newpage
+\begin{lstlisting}[style=DOS]
+Volba:
+  1 3D Segmentacia do suboru
+  2 3D Segmentacia na obrazovku
+  3 2D Segmentacia do suboru
+  4 2D Segmentacia na obrazovku
+
+Zadajte cislo volby: 
+\end{lstlisting}
+Po zvolení typu segmentácie, máme možnosť definovať veľkosť škály obrazu, ktorou bude ovplyvnená jeho šírka 1920 a výška 1080 bodov. Škála predstavuje kladnú hodnotu od 0 po 1.
+\begin{lstlisting}[style=DOS]
+Zvolte skalu obrazu <0 - 1>:
+Cakam na data ... 
+\end{lstlisting}
+Aplikácia následovne čaká na dáta zo zariadenia Kinect, nad ktorými bude prevedená zvolená superpixel segmentácia.
+\begin{lstlisting}[style=DOS]
+Zvolte skalu obrazu <0 - 1>:
+Cakam na data ... OK
+\end{lstlisting}
+Úspešné obdržanie dát je ohlásené príznakom OK. Následne získavame výslednú segmentáciu vo zvolenej forme s informáciou o úspechu a čase vykonávania segmentácie v milisekundách.
+\begin{lstlisting}[style=DOS]
+Zvolte skalu obrazu <0 - 1>:
+Cakam na data ... OK
+Segmentacia uspesna: _cas_ ms
+\end{lstlisting}
+
+
+\newpage
+\appendixpagenumbering
+\section{Obsah priloženého CD nosiča}
+\noindent
+Priložený CD nosič obsahuje nasledovné priečinky:
+\begin{my_itemize}
+	\item \textbf{doc} -- obsahom priečinka je vypracovaná bakalárska práca vo formátoch PDF a TEX.
+	\item \textbf{src} -- priečinok obsahuje implementáciu resp. zdrojový kód
+	\begin{my_itemize}
+	\item \textbf{3D\_DBSCAN} -- aplikácia superpixel segmentácie využívajúca hĺbkovú informáciu
+	\item \textbf{SKRIPT} -- MATLAB skript použitý v etape testovania pri konverzii výslednej
+ 		segmentácie z png a bmp formátu do súborov s príponou mat.
+	\end{my_itemize}
+	\item \textbf{dataset} -- obsahuje nami vytvorený dataset pre účely testovania 
+	\begin{my_itemize}
+	\item \textbf{groundTruth} -- nami vytvorená ľudská segmentácia použitých scén vo formátoch bmp a mat.
+	\item \textbf{scene} -- jednotlivé scény v jpg formáte, na ktorých bolo prevedené testovanie. 
+	\end{my_itemize}
+\end{my_itemize}
+
+\newpage
+\appendixpagenumbering
+\section{Plán práce na riešení projektu (tabulky si vieme generovat online)}
+\subsection{Prvá etapa projektu}
+Na tabuľke \ref{r} je vyznačený plán práce na riešení projektu počas prvej etapy.
+\setcounter{table}{0}
+\begin{table}[H]
+	\centering
+	\caption{Rozvrh práce na 1. časti projektu}
+	\label{r}
+	\begin{tabular}{|l|c|c|}
+		\hline
+		\begin{tabular}[c]{@{}l@{}}Týždeň \\ semestra:\end{tabular} & \multicolumn{1}{l|}{Plán práce:}                                                                          & \multicolumn{1}{l|}{Vyjadrenie k splneniu plánu:}                           \\ \hline
+		1.                                                          & \begin{tabular}[c]{@{}c@{}}Oboznámiť sa s oblasťou\\ počítačového videnia.\end{tabular}                   & \begin{tabular}[c]{@{}c@{}}Plán pre daný týždeň bol\\ splnený.\end{tabular} \\ \hline
+		2.                                                          & \begin{tabular}[c]{@{}c@{}}Zkvalitniť svoje poznatky\\ v oblasti segmentácie\end{tabular}                 & \begin{tabular}[c]{@{}c@{}}Plán pre daný týždeň bol\\ splnený.\end{tabular}  \\ \hline
+		3.                                                          & \begin{tabular}[c]{@{}c@{}}Zozbierať relevantné zdroje\\ k superpixel segmentácii\end{tabular}            & \begin{tabular}[c]{@{}c@{}}Plán pre daný týždeň bol\\ splnený.\end{tabular} \\ \hline
+		4.                                                          & \begin{tabular}[c]{@{}c@{}}Analyzovať zozbierané\\ zdroje\end{tabular}                                    & \begin{tabular}[c]{@{}c@{}}Plán pre daný týždeň bol\\ splnený.\end{tabular} \\ \hline
+		5.                                                          & \begin{tabular}[c]{@{}c@{}}Vypracovať aspoň na 50\%\\ prvú kapitolu práce\end{tabular}                    & \begin{tabular}[c]{@{}c@{}}Plán pre daný týždeň bol\\ splnený.\end{tabular} \\ \hline
+		6.                                                          & Dokončiť prvú kapitolu práce                                                                              & \begin{tabular}[c]{@{}c@{}}Plán pre daný týždeň bol\\ splnený.\end{tabular} \\ \hline
+		7.                                                          & \begin{tabular}[c]{@{}c@{}}Spracovať v druhej kapitole\\ aspoň tretinu ponúkaných metód\end{tabular}      & \begin{tabular}[c]{@{}c@{}}Plán pre daný týždeň bol\\ splnený.\end{tabular} \\ \hline
+		8.                                                          & \begin{tabular}[c]{@{}c@{}}Spracovať v druhej kapitole\\ ostatné ponúkané metódy\end{tabular}             & \begin{tabular}[c]{@{}c@{}}Plán pre daný týždeň bol\\ splnený.\end{tabular} \\ \hline
+		9.                                                          & \begin{tabular}[c]{@{}c@{}}Dokončiť kapitolu dva a \\ analyzovať riešenia 3D segmentácie\end{tabular}     & \begin{tabular}[c]{@{}c@{}}Plán pre daný týždeň bol\\ splnený.\end{tabular} \\ \hline
+		10.                                                         & \begin{tabular}[c]{@{}c@{}}Dokončiť kapitolu dva ponúkanými\\ 3D riešeniami\end{tabular}                  & \begin{tabular}[c]{@{}c@{}}Plán pre daný týždeň bol\\ splnený.\end{tabular} \\ \hline
+		11.                                                         & \begin{tabular}[c]{@{}c@{}}Práca na štylistickej \\ stránke dokumentu\end{tabular}                        & \begin{tabular}[c]{@{}c@{}}Plán pre daný týždeň bol\\ splnený.\end{tabular} \\ \hline
+		12.                                                         & \begin{tabular}[c]{@{}c@{}}Zhodnotenie možnosti v návrhu\\ aplikácie superpixel segmentácie.\end{tabular} & \begin{tabular}[c]{@{}c@{}}Plán pre daný týždeň bol\\ splnený.\end{tabular} \\ \hline
+	\end{tabular}
+\end{table}
+\newpage
+\subsection{Druhá etapa projektu}
+Na tabuľke \ref{r1} je vyznačený plán práce na riešení projektu počas druhe etapy.
+\begin{table}[H]
+	\centering
+	\caption{Rozvrh práce na 2. časti projektu}
+	\label{r1}
+	\begin{tabular}{|l|c|c|}
+		\hline
+		\begin{tabular}[c]{@{}l@{}}Týždeň \\ semestra:\end{tabular} & \multicolumn{1}{l|}{Plán práce:}                                                                                                      & \multicolumn{1}{l|}{Vyjadrenie k splneniu plánu:}                           \\ \hline
+		1.                                                          & \begin{tabular}[c]{@{}c@{}}Rozhodnúť sa na základe\\ analýzy, ktorá superpixel metóda\\ bude rozšírená v rámci projektu.\end{tabular} & \begin{tabular}[c]{@{}c@{}}Plán pre daný týždeň bol\\ splnený.\end{tabular} \\ \hline
+		2.                                                          & \begin{tabular}[c]{@{}c@{}}Čiastočne implementovať\\ zvolenú superpixel metódu prístup\end{tabular}                                                       & \begin{tabular}[c]{@{}c@{}}Plán pre daný týždeň bol\\ splnený.\end{tabular}  \\ \hline
+		3.                                                          & \begin{tabular}[c]{@{}c@{}}Zredukovať prehľadávanie\\ algoritmu na štvorsusednosť\end{tabular}                                        & \begin{tabular}[c]{@{}c@{}}Plán pre daný týždeň bol\\ splnený.\end{tabular} \\ \hline
+		4.                                                          & \begin{tabular}[c]{@{}c@{}}Zabezpečiť komunikáciu\\ so zariadením Kinect v2\end{tabular}                                              & \begin{tabular}[c]{@{}c@{}}Plán pre daný týždeň bol\\ splnený.\end{tabular} \\ \hline
+		5.                                                          & \begin{tabular}[c]{@{}c@{}}Práca na možnostiach\\ integrácie hĺbkovej informácie.\end{tabular}                                         & \begin{tabular}[c]{@{}c@{}}Plán pre daný týždeň bol\\ splnený.\end{tabular} \\ \hline
+		6.                                                          & \begin{tabular}[c]{@{}c@{}}Pridať hĺbkovú informáciu do \\ algoritmu a otestovať \\ vhodné parametre\end{tabular}                     & \begin{tabular}[c]{@{}c@{}}Plán pre daný týždeň bol\\ splnený.\end{tabular} \\ \hline
+		7.                                                          & \begin{tabular}[c]{@{}c@{}}Implementovať fázu spájania\\ na základe hĺbkovej informácie\end{tabular}                                     & \begin{tabular}[c]{@{}c@{}}Plán pre daný týždeň bol\\ splnený.\end{tabular} \\ \hline
+		8.                                                          & \begin{tabular}[c]{@{}c@{}}Posúdiť možné alternatívy\\ testovania\end{tabular}                                                        & \begin{tabular}[c]{@{}c@{}}Plán pre daný týždeň bol\\ splnený.\end{tabular} \\ \hline
+		9.                                                          & \begin{tabular}[c]{@{}c@{}}Vytvoriť dataset pre účely\\ testovania a porovnať výsledky\\ medzi viacerými prístupmi\end{tabular}       & \begin{tabular}[c]{@{}c@{}}Plán pre daný týždeň bol\\ splnený.\end{tabular} \\ \hline
+		10.                                                         & \begin{tabular}[c]{@{}c@{}}Zdokumentovať etapu\\ návrhu a implementácie\end{tabular}                                                  & \begin{tabular}[c]{@{}c@{}}Plán pre daný týždeň bol\\ splnený.\end{tabular} \\ \hline
+		11.                                                         & \begin{tabular}[c]{@{}c@{}}Zdokumentovať etapu testovania\\ spolu s možnosťami vylepšenia\end{tabular}                                & \begin{tabular}[c]{@{}c@{}}Plán pre daný týždeň bol\\ splnený.\end{tabular} \\ \hline
+		12.                                                         & \begin{tabular}[c]{@{}c@{}}Upraviť formát dokumentu\\ do požadovanej podoby.\end{tabular}                                             & \begin{tabular}[c]{@{}c@{}}Plán pre daný týždeň bol\\ splnený.\end{tabular} \\ \hline
+	\end{tabular}
+\end{table}

@@ -1,0 +1,39 @@
+\newpage
+\section{Implementácia}
+\lipsum[1]
+
+\subsection{Podsekcia 1} \label{iclass}
+\noindent
+\lipsum[1]
+
+\begin{algorithm}[H]
+	\small
+	\caption{Načítanie údajov}\label{kinect}
+	\algorithmicrequire $depthMat$, $colorMat$\\
+	\algorithmicensure $depthMat$, $colorMat$
+	
+	\begin{algorithmic}[1]
+		\Procedure{GetMappedColorData}{}
+		\If {\textbf{getFrame}($frame$) = $success$}
+		\State \textbf{mapData}($frame$, $mapped$)
+		\If {\textbf{getColor}($frame$, $colorFrame$) = $success$}
+		\State \textbf{copyFrameData}($colorFrame$, $colorData$)
+		\For {$i<$\textbf{width}($color$)}
+		\For {$j<$\textbf{height}($color$)}
+		\State $depthSpacePoint \gets mapped[i][j]$
+		\If {\textbf{visible}($depthSpacePoint$) $\not= success$}
+		\State $depthMat[i][j]\gets -1$
+		\Else
+		\State $index\gets$ \textbf{getIndex}($depthSpacePoint$)
+		\State $depthMat[i][j]\gets depthData[index]$
+		\EndIf
+		\State $colorMat[i][j]\gets colorData[i][j]$
+		\EndFor
+		\EndFor
+		\EndIf
+		\EndIf
+		\EndProcedure
+	\end{algorithmic}
+\end{algorithm}
+\noindent
+V prvom pseudokóde so vstupnými a výstupnými parametrami typu \textbf{Mat} (typ reprezentujúci maticu definovaný v OpenCV) sme použili následovné metódy: \dots

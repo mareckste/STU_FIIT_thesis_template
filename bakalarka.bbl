@@ -1,0 +1,143 @@
+\begin{thebibliography}{10}
+
+\bibitem{15}
+{\sc Achanta, R., Shaji, A., Smith, K., Lucchi, A., Fua, P., and Süsstrunk,
+  S.}
+\newblock {SLIC Superpixels Compared to State-of-the-Art Superpixel Methods}.
+\newblock {\em IEEE Transactions on Pattern Analysis and Machine Intelligence
+  34}, 11 (Nov 2012), 2274--2282.
+
+\bibitem{10}
+{\sc Arifin, A.~Z., and Asano, A.}
+\newblock Image segmentation by histogram thresholding using hierarchical
+  cluster analysis.
+\newblock {\em Pattern Recognition Letters 27}, 13 (2006), 1515 -- 1521.
+
+\bibitem{20}
+{\sc Ester, M., Kriegel, H.-P., Sander, J., and Xu, X.}
+\newblock A density-based algorithm for discovering clusters in large spatial
+  databases with noise.
+\newblock In {\em {Proc. 2nd Int. Conf. Knowl. Discovery Data Mining (KDD)}\/}
+  (1996), AAAI Press, pp.~226--231.
+
+\bibitem{5}
+{\sc Forouzanfar, M., Forghani, N., and Teshnehlab, M.}
+\newblock Parameter optimization of improved fuzzy c-means clustering algorithm
+  for brain \{MR\} image segmentation.
+\newblock {\em Engineering Applications of Artificial Intelligence 23}, 2
+  (2010), 160 -- 168.
+
+\bibitem{2}
+{\sc Ganguly, A., Henry, D.~P., Yune, H.~Y., Pratt, J., Grim, C., Donohue,
+  J.~P., and Weinberger, M.~H.}
+\newblock Diagnosis and localization of pheochromocytoma.
+\newblock {\em The American Journal of Medicine 67}, 1 (1979), 21 -- 26.
+
+\bibitem{9}
+{\sc {Intel Corp.}}
+\newblock {OpenCV} online documentation.
+\newblock \url{http://opencv.org}.
+\newblock Accessed: 2016-10-04.
+
+\bibitem{13}
+{\sc Jenifer, A., and Raajan, N.~R.}
+\newblock {Superpixel Based K-MEANS clustering on Chemical Bonding Structure
+  Analysis}.
+\newblock {\em Rasayan J. Chem. 8}, 1 (Jan. 2015), 105--108.
+
+\bibitem{12}
+{\sc Li, Z., and Chen, J.}
+\newblock Superpixel segmentation using {Linear Spectral Clustering}.
+\newblock In {\em 2015 IEEE Conference on Computer Vision and Pattern
+  Recognition (CVPR)\/} (June 2015), pp.~1356--1363.
+
+\bibitem{24}
+{\sc Martin, D., Fowlkes, C., Tal, D., and Malik, J.}
+\newblock {A Database of Human Segmented Natural Images and its Application to
+  Evaluating Segmentation Algorithms and Measuring Ecological Statistics}.
+\newblock In {\em Proc. 8th Int'l Conf. Computer Vision\/} (July 2001), vol.~2,
+  pp.~416--423.
+
+\bibitem{8}
+{\sc {Microsoft Corp.}}
+\newblock {Microsft Kinect} hardware specifications.
+\newblock \url{https://developer.microsoft.com/en-us/windows/kinect/hardware}.
+\newblock Accessed: 2016-09-30.
+
+\bibitem{1}
+{\sc NASA}.
+\newblock {\em Ranger 7 photographs of the moon}.
+\newblock SP-61, SP-62, and SP-63. NASA Series Publications, Washington, D.C.,
+  Sept. 1964 - 1965.
+
+\bibitem{7}
+{\sc Ozden, M., and Polat, E.}
+\newblock {A Color Image Segmentation Approach for Content-based Image
+  Retrieval}.
+\newblock {\em Pattern Recogn. 40}, 4 (Apr. 2007), 1318--1325.
+
+\bibitem{11}
+{\sc Ren, X.}
+\newblock {Superpixel: Empirical Studies and Applications}.
+\newblock \url{http://ttic.uchicago.edu/~xren/research/superpixel/}.
+\newblock Accessed: 2016-11-17.
+
+\bibitem{19}
+{\sc Shen, J., Hao, X., Liang, Z., Liu, Y., Wang, W., and Shao, L.}
+\newblock Real-time superpixel segmentation by dbscan clustering algorithm.
+\newblock {\em IEEE Transactions on Image Processing 25}, 12 (Dec 2016),
+  5933--5942.
+
+\bibitem{16}
+{\sc Shi, J., and Malik, J.}
+\newblock Normalized cuts and image segmentation.
+\newblock {\em IEEE Trans. Pattern Anal. Mach. Intell. 22}, 8 (Aug. 2000),
+  888--905.
+
+\bibitem{3}
+{\sc Stockman, G., and Shapiro, L.~G.}
+\newblock {\em Computer Vision}, 1st~ed.
+\newblock Prentice Hall PTR, Upper Saddle River, NJ, USA, 2001.
+
+\bibitem{23}
+{\sc Stutz, D.}
+\newblock {Superpixel Segmentation: An Evaluation}.
+\newblock In {\em Pattern Recognition}, J.~Gall, P.~Gehler, and B.~Leibe, Eds.,
+  vol.~9358 of {\em Lecture Notes in Computer Science}. Springer International
+  Publishing, 2015, pp.~555 -- 562.
+
+\bibitem{21}
+{\sc Stutz, D., Hermans, A., and Leibe, B.}
+\newblock Superpixel segmentation using depth information.
+\newblock http://davidstutz.de/, September 2014.
+
+\bibitem{14}
+{\sc Tatiraju, S., and Mehta, A.}
+\newblock {Image Segmentation Using K-means Clustering, Em and Normalized
+  Cuts}.
+
+\bibitem{17}
+{\sc Van~den Bergh, M., Boix, X., Roig, G., de~Capitani, B., and Van~Gool, L.}
+\newblock Seeds: Superpixels extracted via energy-driven sampling.
+\newblock In {\em Proceedings of the 12th European Conference on Computer
+  Vision - Volume Part VII\/} (Berlin, Heidelberg, 2012), ECCV'12,
+  Springer-Verlag, pp.~13--26.
+
+\bibitem{22}
+{\sc Weikersdorfer, D., Gossow, D., and Beetz, M.}
+\newblock Depth-adaptive superpixels.
+\newblock In {\em Proceedings of the 21st International Conference on Pattern
+  Recognition (ICPR2012)\/} (Nov 2012), pp.~2087--2090.
+
+\bibitem{6}
+{\sc Yang, M.-H., and Ahuja, N.}
+\newblock Detecting human faces in color images.
+\newblock In {\em Image Processing, 1998. ICIP 98. Proceedings. 1998
+  International Conference on\/} (Oct 1998), vol.~1, pp.~127--130 vol.1.
+
+\bibitem{18}
+{\sc Zhu, S., Cao, D., Jiang, S., Wu, Y., and Hu, P.}
+\newblock Fast superpixel segmentation by iterative edge refinement.
+\newblock {\em Electronics Letters 51}, 3 (2015), 230--232.
+
+\end{thebibliography}

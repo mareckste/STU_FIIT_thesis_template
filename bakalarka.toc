@@ -1,0 +1,20 @@
+\select@language {slovak}
+\contentsline {section}{\numberline {1}\IeC {\'U}vod}{1}{section.1}
+\contentsline {section}{\numberline {2}Anal\IeC {\'y}za problematiky}{3}{section.2}
+\contentsline {subsection}{\numberline {2.1}Podsekcia 1}{3}{subsection.2.1}
+\contentsline {subsubsection}{\numberline {2.1.1}Podsekcia 2}{5}{subsubsection.2.1.1}
+\contentsline {paragraph}{\numberline {2.1.1.1}Podsekcia 3}{5}{paragraph.2.1.1.1}
+\contentsline {paragraph}{\numberline {2.1.1.2}Podsekcia 3}{6}{paragraph.2.1.1.2}
+\contentsline {section}{\numberline {3}N\IeC {\'a}vrh}{7}{section.3}
+\contentsline {subsection}{\numberline {3.1}Podsekcia 1}{7}{subsection.3.1}
+\contentsline {section}{\numberline {4}Implement\IeC {\'a}cia}{11}{section.4}
+\contentsline {subsection}{\numberline {4.1}Podsekcia 1}{11}{subsection.4.1}
+\contentsline {section}{\numberline {5}Testovanie}{13}{section.5}
+\contentsline {section}{\numberline {6}Z\IeC {\'a}vere\IeC {\v c}n\IeC {\'e} zhodnotenie}{15}{section.6}
+\contentsline {section}{Pou\IeC {\v z}it\IeC {\'a} literat\IeC {\'u}ra}{17}{section*.1}
+\contentsline {section}{\numberline {A}Technick\IeC {\'a} dokument\IeC {\'a}cia}{A-1}{appendix.A}
+\contentsline {section}{\numberline {B}Pou\IeC {\v z}\IeC {\'\i }vate\IeC {\v l}sk\IeC {\'a} pr\IeC {\'\i }ru\IeC {\v c}ka}{B-1}{appendix.B}
+\contentsline {section}{\numberline {C}Obsah prilo\IeC {\v z}en\IeC {\'e}ho CD nosi\IeC {\v c}a}{C-1}{appendix.C}
+\contentsline {section}{\numberline {D}Pl\IeC {\'a}n pr\IeC {\'a}ce na rie\IeC {\v s}en\IeC {\'\i } projektu (tabulky si vieme generovat online)}{D-1}{appendix.D}
+\contentsline {subsection}{\numberline {D.1}Prv\IeC {\'a} etapa projektu}{D-1}{subsection.D.1}
+\contentsline {subsection}{\numberline {D.2}Druh\IeC {\'a} etapa projektu}{D-2}{subsection.D.2}

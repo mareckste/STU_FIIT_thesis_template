@@ -1,0 +1,5 @@
+\def \figurename {Algoritmus}
+\contentsline {algorithm}{\numberline {1}{\ignorespaces Na\IeC {\v c}\IeC {\'\i }tanie \IeC {\'u}dajov}}{40}{algorithm.1}
+\contentsline {algorithm}{\numberline {2}{\ignorespaces Konverzia \IeC {\'u}dajov}}{41}{algorithm.2}
+\contentsline {algorithm}{\numberline {3}{\ignorespaces Superpixel segment\IeC {\'a}cia}}{42}{algorithm.3}
+\contentsline {algorithm}{\numberline {4}{\ignorespaces Sp\IeC {\'a}janie superpixelov}}{44}{algorithm.4}
