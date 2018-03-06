@@ -3,8 +3,13 @@
 \thispagestyle{empty}
 
 
-{\Large \bf Slovenská Technická Univerzita v Bratislave}\\[\baselineskip]
-{\large Fakulta informatiky a informačných technológií}
+\ifenglish
+	{\Large \bf \Uni}\\[\baselineskip]
+	{\large \Faculty}
+\else
+	{\Large \bf \Unisk}\\[\baselineskip]
+	{\large \Facultysk}
+\fi
 
 \noindent\makebox[\linewidth]{\rule{\textwidth}{1pt}} 
 
@@ -14,11 +19,21 @@
 {\large \bf \FIIT}\\
 \vspace*{4.5cm}
 {\Large \Author}\\[\baselineskip]
-{\huge \bf \Titlesk}\\[\baselineskip]
-{\large Bakalárska práca}\\
-
+\ifenglish
+	{\huge \bf \Title}\\[\baselineskip]
+	{\large \Thesis}\\
+\else
+	{\huge \bf \Titlesk}\\[\baselineskip]
+	{\large \Thesissk}\\
+\fi
 \end{center}
-\vspace{5.5cm}
-{\bf Vedúci práce:} \Supervisor \\
-\\
- \Monthsk    \Year
+\vspace{7.4cm}
+\ifenglish
+	{\bf \Superv} \Supervisor \\
+	\\
+	\Month    \Year
+\else
+	{\bf \Supervsk} \Supervisor \\
+	\\
+	\Monthsk    \Year
+\fi

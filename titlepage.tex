@@ -2,9 +2,14 @@
 \newpage
 \thispagestyle{empty}
 
+\ifenglish
+	{\Large \bf \Uni}\\[\baselineskip]
+	{\large \Faculty}
+\else
+	{\Large \bf \Unisk}\\[\baselineskip]
+	{\large \Facultysk}
+\fi
 
-{\Large \bf Slovenská Technická Univerzita v Bratislave}\\[\baselineskip]
-{\large Fakulta Informatiky a Informačných Technológií}
 
 \noindent\makebox[\linewidth]{\rule{\textwidth}{1pt}} 
 
@@ -14,13 +19,28 @@
 {\large \bf \FIIT}\\
 \vspace*{4.5cm}
 {\Large \Author}\\[\baselineskip]
-{\huge \bf \Titlesk}\\[\baselineskip]
-{\large Bakalárska práca}\\
+\ifenglish
+	{\huge \bf \Title}\\[\baselineskip]
+	{\large \Thesis}\\
+\else
+	{\huge \bf \Titlesk}\\[\baselineskip]
+	{\large \Thesissk}\\
+\fi
 
 \end{center}
-\vspace{4.0cm}
-{\bf Štúdijný program:} \Programsk\\ 
-{\bf Študijný odbor:} \Fieldsk\\
-{\bf Miesto vypracovania:} \Placesk\\
-{\bf Vedúci práce:} \Supervisor \\ \\
-\Monthsk    \Year
+\vspace{4.9cm}
+\ifenglish
+	{\bf Degree course:} \hspace*{1.4cm} \Program\\ 
+	{\bf Field of study:}  \hspace*{1.6cm}\Field\\
+	{\bf Place of elaboration:}  \hspace*{.5cm}\Place,\\ 
+	\hspace*{4.4cm}FIIT STU, Bratislava \\
+	{\bf \Superv}  \hspace*{2cm} \Supervisor \\ \\
+	\Month    \Year
+\else
+	{\bf Štúdijný program:}  \hspace*{0.6cm} \Programsk\\ 
+	{\bf Študijný odbor:}  \hspace*{1.1cm} \Fieldsk\\
+	{\bf Miesto vypracovania:}  \hspace*{0.1cm} \Placesk,\\
+	\hspace*{4.2cm}FIIT STU, Bratislava \\
+	{\bf \Supervsk}  \hspace*{1.5cm} \Supervisor \\ \\
+	\Monthsk    \Year
+\fi

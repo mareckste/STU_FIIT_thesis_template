@@ -1,12 +1,18 @@
-\documentclass[a4paper,english,12pt,appendix,twoside]{article}
+\newcommand{\myFontSize}[0] {12pt}
+\newcommand{\mySpacing}[0] {1.5}
+\newcommand{\myBibliography}[0] {bib/refs, appendices/refs1}
 
+\documentclass[a4paper,english,12pt,appendix,twoside]{article}
 %%
 %% Formats and Defs
 %%
 \input{FormatsAndDefs.tex}
-\usepackage[slovak]{babel}                                                      % title in Slovak
-\usepackage[IL2]{fontenc}                                                       % support for word wrapping of special Slovak characters at the end of line on the end
-  
+%% SET THE LANGUAGE DEFINED
+\newif\ifenglish
+\englishfalse %% to use slovak template change the command to \englishfalse
+%%
+%\usepackage[slovak]{babel}
+%\usepackage[IL2]{fontenc}                                                   
 
 \let\oldsection\section
 \def\section{\cleardoublepage\oldsection}
@@ -53,12 +59,24 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 %-------definitions-----
-\newcommand{\Author}{Meno Priezvisko} 
+\newcommand{\Unisk}{Slovenská Technická Univerzita v Bratislave}
+\newcommand{\Uni}{Slovak University of Technology in Bratislava}
+\newcommand{\Facultysk}{Fakulta informatiky a informačných technológií}
+\newcommand{\Faculty}{Faculty of informatics and information technologies}
+\newcommand{\Thesis}{Master's thesis}
+\newcommand{\Thesissk}{Diplomová práca}
+\newcommand{\Author}{Name Surname} 
 \newcommand{\Title}{Title English}
 \newcommand{\Titlesk}{Title Slovak}
-\newcommand{\Supervisor}{Supervisor}
-\newcommand{\Place}{Institute of computer engineering and applied informatics, FIIT STU, Bratislava}
-\newcommand{\Placesk}{Ústav počítačového inžinierstva a aplikovanej informatiky, FIIT STU, Bratislava}
+\newcommand{\Supervisor}{Supervisor's name}
+\newcommand{\Decl}{Declaration}
+\newcommand{\Declsk}{Čestné prehlásenie}
+\newcommand{\Thanks}{Special thanks}
+\newcommand{\Thankssk}{Poďakovanie}
+\newcommand{\Superv}{Supervisor:}
+\newcommand{\Supervsk}{Vedúci práce:}
+\newcommand{\Place}{Institute of computer engineering and applied informatics}
+\newcommand{\Placesk}{Ústav počítačového inžinierstva a aplikovanej informatiky}
 \newcommand{\Year}{2017}
 \newcommand{\Month}{May }
 \newcommand{\Monthsk}{Máj }
@@ -67,7 +85,6 @@
 \newcommand{\Fieldsk}{9.2.1 Informatika}
 \newcommand{\Program}{Informatics}
 \newcommand{\Programsk}{Informatika}
-
 
 
 %%
@@ -106,6 +123,31 @@ pdfkeywords={key words},%
 %\usepackage{geometry}
 \usepackage{lmodern}
 \usepackage{lipsum}
+
+\ifenglish
+	\usepackage[english]{babel}                                               
+	\usepackage[figurename=Fig.]{caption}
+	\renewcommand{\captionfont}{\small\itshape}
+	\graphicspath{{figures/}}
+	\captionsetup[figure]{labelfont=normal,textfont=it}
+	\addto\captionsenglish{% Replace "english" with the language you use
+		\renewcommand{\contentsname}%
+		{Table of contents}%
+	}
+\else
+	\usepackage[slovak]{babel}                                               
+	\usepackage[figurename=Obr.]{caption}
+	\renewcommand{\captionfont}{\small\itshape}
+	\graphicspath{{figures/}}
+	\captionsetup[figure]{labelfont=normal,textfont=it}
+	\addto\captionsenglish{% Replace "english" with the language you use
+		\renewcommand{\contentsname}%
+		{Obsah}%
+	}
+\fi
+
+
+
 \begin{document}
 \lstset{language=Matlab,%
 	%basicstyle=\color{red},
@@ -125,6 +167,7 @@ pdfkeywords={key words},%
 }
 
 \urlstyle{same}
+
 \input{intropage.tex}
 %%
 %% Title Page
@@ -206,7 +249,7 @@ pdfkeywords={key words},%
 %%
 %% test
 %%
-\input{results.tex}
+%\input{results.tex}
 
 
 %%
@@ -221,7 +264,11 @@ pdfkeywords={key words},%
 %\cleardoublepage 
 \bibliographystyle{acm}
 %\addcontentsline{toc}{section}{\refname}
-\renewcommand\bibname{Použitá literatúra}
+\ifenglish
+	\renewcommand\bibname{References}
+\else
+	\renewcommand\bibname{Použitá literatúra}
+\fi
 \bibliography{references.bib}
 \newpage
 
