@@ -7,4 +7,4 @@ To **compile** use:
 
 ## Usage  
  - Simply compile `thesis.tex` file, which is considered as a preamble of the document.
- - If you wish to use **Slovak language** in the template, change command`\ifenglishtrue`  to `\ifenglishfalse` in the document's preamble.
+ - If you wish to use **Slovak language** in the template, change command`\englishtrue`  to `\englishfalse` in the document's preamble and vice-versa.
